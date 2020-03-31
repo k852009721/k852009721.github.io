@@ -1050,7 +1050,15 @@
 	}
 
 /* Spotlight */
+	// .testTitle {
+	// 	display: flex;
+	// 	justify-content: center;
+	// 	align-items: center;
 
+	// 	h2 {
+	// 		margin: 0;
+	// 	}
+	// }
 	.spotlight {
 		@include vendor('align-items', 'center');
 		@include vendor('display', 'flex');
