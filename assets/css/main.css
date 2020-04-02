@@ -2658,8 +2658,9 @@ input, select, textarea {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: space-around;
+		/* justify-content: space-between; */
 		width: 100%;
+		padding: 0 3%;
 	}
 		.dayblock {
 			display: flex;
@@ -2667,12 +2668,21 @@ input, select, textarea {
 			align-items: center;
 			width: 30%;
 		}
-			.dayblock img {
+
+		.dayblock:not(:nth-child(3n)) {
+			margin-right: calc(10% / 2);
+			margin-bottom: 4%;
+		}
+
+			.dayblock .img {
 				width: 100%;
+				background-size: cover;
+				background-position: center;
+				padding-bottom: 80%;
 			}
 
 			.dayblock .title {
-
+				margin-top: 6px;
 			}
 		@media screen and (max-width: 1280px) {
 			.dayblock img {
@@ -3626,6 +3636,11 @@ input, select, textarea {
 		position: relative;
 		text-align: center;
 	}
+
+		#banner .logo {
+			width: 100%;
+			max-width: 500px;
+		}
 
 		#banner h2 {
 			-moz-transform: scale(1);
