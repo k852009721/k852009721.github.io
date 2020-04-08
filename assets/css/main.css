@@ -172,7 +172,7 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 1.35em;
+		font-size: 1.75em;
 		line-height: 1.75em;
 	}
 
@@ -2556,6 +2556,9 @@ input, select, textarea {
 			text-align: left;
 			width: 50%;
 		}
+			.features li p {
+				text-align: justify;
+			}
 
 			.features li:nth-child(1) {
 				background-color: rgba(0, 0, 0, 0.035);
@@ -3195,6 +3198,10 @@ input, select, textarea {
 			background-color: transparent;
 		}
 
+		.wrapper.ctbg {
+			background-color: #152E56;
+		}
+
 		.wrapper.style5 {
 			background-color: #ffffff;
 			color: #4E4852;
@@ -3825,13 +3832,30 @@ input, select, textarea {
 			width: 45%;
 			height: 100%;
 		}
-		#member .members .member img{
-			width: 45%;
-			height: 100%;
+
+		#member .members .member .member_pic {
+			width: 380px;
+			height: 450px;
 			margin: 0 5% 0 0;
 		}
+			#member .members .member .member_pic.member1 {
+				background: url(../../images/member_pic1.jpg) no-repeat;
+				background-size:cover;
+				background-position:center center;
+			}
+			#member .members .member .member_pic.member2 {
+				background: url(../../images/member_pic2.jpg) no-repeat;
+				background-size:cover;
+				background-position:center center;
+			}
+		#member .members .member .info {
+			width: calc(95% - 380px);
+		}
+		#member .members .member .info div {
+			margin-bottom: 1em;
+		}
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 1280px) {
 		#member .members {
 			flex-direction: column;
 			align-items: center;
@@ -3839,11 +3863,16 @@ input, select, textarea {
 			#member .members .member {
 				flex-direction: column;
 				align-items: center;
+				width: 320px;
 			}
-			#member .members .member img{
-				width: 100%;
+			#member .members .member .member_pic {
+				width: 320px;
+				height: 380px;
 				margin: 0 0 5% 0;
 			}
+		#member .members .member .info {
+			width: unset;
+		}
 	}
 
 /* CTA */
