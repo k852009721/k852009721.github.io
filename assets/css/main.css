@@ -2556,6 +2556,11 @@ input, select, textarea {
 			text-align: left;
 			width: 50%;
 		}
+			.features li img {
+				width: 100%;
+				max-width: 260px;
+			}
+
 			.features li p {
 				text-align: justify;
 			}
